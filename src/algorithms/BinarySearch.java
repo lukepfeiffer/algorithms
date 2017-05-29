@@ -5,14 +5,17 @@ public class BinarySearch {
 	public static void main(String args[]){
 		Scanner scan = new Scanner(System.in);
 		
-		int arraySize = (int) Math.random() * 101;
+		int arraySize = (int) (Math.random() * 300);
+		
+		System.out.println("Enter a number from 1 - " + arraySize);
+
+
 		int [] array = createArray(arraySize);
 		
 		int input = scan.nextInt();
-		
 		int numGuesses = search(array, input);
 		
-		System.out.println("The number you guessed was: " + input + "/n and it took the computer " + numGuesses + "guesses!" );
+		System.out.println("The number you guessed was: " + input + "\nand it took the computer " + numGuesses + " guesses!" );
 		scan.close();
 	}
 	
@@ -45,13 +48,11 @@ public class BinarySearch {
 	    		max = compGuess - 1;
 	    	}
 	    }
-	    
 		return numGuesses;
 	}
 	
 	public static int[] createArray(int arraySize){
 		int [] array = new int[arraySize];
-		
 		for(int i = 0; i < arraySize; ++i){
 			array[i] = i+1;
 		}
