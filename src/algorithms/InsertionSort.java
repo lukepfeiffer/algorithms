@@ -1,6 +1,6 @@
 package algorithms;
 
-public class InsertionSort extends ParentAlgorithms {
+public class InsertionSort {
 	public static void main(String args[]) {
 		int arraySize = 20;
 		int[] array = ParentAlgorithms.createRandomArray(arraySize-1);
