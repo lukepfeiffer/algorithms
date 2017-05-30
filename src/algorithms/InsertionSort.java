@@ -3,13 +3,13 @@ package algorithms;
 public class InsertionSort {
 	public static void main(String args[]) {
 		int arraySize = 20;
-		int[] array = ParentAlgorithms.createRandomArray(arraySize-1);
+		int[] array = AlgorithmsHelper.createRandomArray(arraySize-1);
 		
-		System.out.println("Unsorted: " + ParentAlgorithms.arrayToString(array));
+		System.out.println("Unsorted: " + AlgorithmsHelper.arrayToString(array));
 
 		sort(array);
 		
-		System.out.println("Sorted: " + ParentAlgorithms.arrayToString(array));
+		System.out.println("Sorted: " + AlgorithmsHelper.arrayToString(array));
 	}
 
 	public static int[] sort(int[] array) {

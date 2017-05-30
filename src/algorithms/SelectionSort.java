@@ -2,12 +2,12 @@ package algorithms;
 
 public class SelectionSort {
 	public static void main(String args[]) {
-		int[] array = ParentAlgorithms.createRandomArray(40);
+		int[] array = AlgorithmsHelper.createRandomArray(40);
 
-		System.out.print("Original array: " + ParentAlgorithms.arrayToString(array));
+		System.out.print("Original array: " + AlgorithmsHelper.arrayToString(array));
 		
 		array = sort(array);
-		System.out.print("\nSorted array: " + ParentAlgorithms.arrayToString(array));
+		System.out.print("\nSorted array: " + AlgorithmsHelper.arrayToString(array));
 
 	}
 

@@ -1,6 +1,6 @@
 package algorithms;
 
-public class ParentAlgorithms {
+public class AlgorithmsHelper {
 	
 	public static String arrayToString(int [] array){
 		String returnString = "";
